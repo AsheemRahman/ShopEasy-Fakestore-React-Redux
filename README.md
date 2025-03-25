@@ -1,12 +1,60 @@
-# React + Vite
+# ShopEasy Fakestore React Redux
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React project using **Redux Toolkit** to fetch and display products from the **FakeStore API**. It includes features like pagination, category filtering, and product search.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetch products from [FakeStore API](https://fakestoreapi.com/)
+- Display products in a paginated list
+- View product details on a separate page
+- Filter products by category
+- Implement product search filtering
+- Uses Redux Toolkit for state management
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- Redux Toolkit
+- React Router
+- Tailwind CSS (for styling)
+- Axios (for API requests)
+
+## Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/AsheemRahman/ShopEasy-Fakestore-React-Redux.git
+   cd ShopEasy-Fakestore-React-Redux
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+## Project Structure
+```
+redux-toolkit-fakestore/
+├── src/
+│   ├── components/       # Pages (ProductList, ProductDetail, etc.)
+│   ├── redux/            # Redux Toolkit store, slices
+│   ├── services/         # API service functions
+│   ├── App.js            # Main App component
+├── public/               # Static assets
+├── package.json          # Project dependencies
+├── README.md             # Project documentation
+```
+
+## API Usage
+
+- **Get all products:** `https://fakestoreapi.com/products`
+- **Get product by ID:** `https://fakestoreapi.com/products/{id}`
+- **Get categories:** `https://fakestoreapi.com/products/categories`
+- **Get products by category:** `https://fakestoreapi.com/products/category/{category}`
+
+
